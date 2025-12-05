@@ -4,7 +4,7 @@ Sistema completo para entrenamiento y validación de modelos de clasificación b
 
 ---
 
-## 📋 Tabla de Contenidos
+## Tabla de Contenidos
 
 1. [Descripción General](#descripción-general)
 2. [Estructura del Proyecto](#estructura-del-proyecto)
@@ -22,7 +22,7 @@ Sistema completo para entrenamiento y validación de modelos de clasificación b
 
 ---
 
-## 🎯 Descripción General
+## Descripción General
 
 Este proyecto implementa un sistema completo de entrenamiento supervisado para clasificación binaria de imágenes. El sistema está diseñado para:
 
@@ -36,7 +36,7 @@ Este proyecto implementa un sistema completo de entrenamiento supervisado para c
 
 ---
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 TesisMDP_supervised/
@@ -83,7 +83,7 @@ TesisMDP_supervised/
 
 ---
 
-## 🔧 Requisitos e Instalación
+## Requisitos e Instalación
 
 ### Requisitos del Sistema
 
@@ -111,7 +111,7 @@ pip install -r requirements.txt
 
 ---
 
-## ⚙️ Configuración
+## Configuración
 
 ### 1. Configurar Ruta del Dataset
 
@@ -127,7 +127,7 @@ DATASET_SUPERVISADO_PATH = r"E:\Dataset\Validacion_procesadas"  # Cambiar esta r
 
 ---
 
-## 📂 Estructura del Dataset
+## Estructura del Dataset
 
 El dataset debe tener la siguiente estructura:
 
@@ -154,7 +154,7 @@ dataset_supervisado/
 
 ---
 
-## 🖼️ Procesamiento de Imágenes
+## Procesamiento de Imágenes
 
 ### Características del Procesamiento
 
@@ -173,7 +173,7 @@ dataset_supervisado/
 
 ---
 
-## 🤖 Modelos Disponibles
+## Modelos Disponibles
 
 El sistema incluye **25 modelos diferentes** organizados en 5 grupos:
 
@@ -314,7 +314,7 @@ Clasificador basado en diferentes backbones preentrenados:
 
 ---
 
-## 🚀 Uso del Sistema
+## Uso del Sistema
 
 ### Entrenamiento de Modelos
 
@@ -363,7 +363,7 @@ python train_all_models.py --modelo 3 --patience 15 --min_delta 0.0005
 
 ---
 
-## ✅ Validación de Modelos
+## Validación de Modelos
 
 ### Script de Validación
 
@@ -429,7 +429,7 @@ El script genera:
 
 ---
 
-## 🎛️ Características Implementadas
+## Características Implementadas
 
 ### 1. Early Stopping Automático
 
@@ -468,7 +468,7 @@ El sistema calcula automáticamente el batch size óptimo según la memoria GPU 
 
 ---
 
-## 📊 Parámetros y Opciones
+## Parámetros y Opciones
 
 ### Parámetros Globales
 
@@ -499,7 +499,7 @@ El sistema calcula automáticamente el batch size óptimo según la memoria GPU 
 
 ---
 
-## 📁 Archivos Generados
+## Archivos Generados
 
 ### Durante el Entrenamiento
 
@@ -525,7 +525,7 @@ Cada modelo genera:
 
 ---
 
-## 💡 Ejemplos de Uso
+## Ejemplos de Uso
 
 ### Ejemplo 1: Entrenar Todos los Modelos
 
@@ -579,7 +579,7 @@ python train_all_models.py --modelo 1 --img_size 256
 
 ---
 
-## 🔍 Resumen de Modelos por Grupo
+## Resumen de Modelos por Grupo
 
 | Grupo | Variantes | Arquitecturas |
 |-------|-----------|---------------|
@@ -592,7 +592,7 @@ python train_all_models.py --modelo 1 --img_size 256
 
 ---
 
-## 📝 Notas Importantes
+## Notas Importantes
 
 1. **GPU Recomendada**: El entrenamiento es mucho más rápido con GPU. El sistema detecta automáticamente la GPU disponible.
 
@@ -606,7 +606,7 @@ python train_all_models.py --modelo 1 --img_size 256
 
 ---
 
-## 🐛 Solución de Problemas
+## Solución de Problemas
 
 ### Error: "CUDA no está disponible"
 - Verifica que tengas una GPU NVIDIA compatible
@@ -626,7 +626,7 @@ python train_all_models.py --modelo 1 --img_size 256
 
 ---
 
-## 📚 Referencias
+## Referencias
 
 - **PyTorch**: https://pytorch.org/
 - **Torchvision Models**: https://pytorch.org/vision/stable/models.html
@@ -635,13 +635,13 @@ python train_all_models.py --modelo 1 --img_size 256
 
 ---
 
-## 👤 Autor
+## Autor
 
 Proyecto desarrollado para Tesis de Maestría en Data Science.
 
 ---
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto es parte de una investigación académica.
 
