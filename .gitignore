@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Modelos entrenados (archivos grandes)
+*.pt
+*.pth
+*.h5
+*.ckpt
+
+# Datos y datasets
+*.csv
+*.json
+*.pkl
+*.pickle
+data/
+datasets/
+*.db
+*.sqlite
+
+# Logs y outputs
+runs/
+outputs/
+*.log
+*.out
+tensorboard_logs/
+
+# Historiales de entrenamiento (opcional - descomentar si no quieres subirlos)
+# modelos/*/models/*.json
+# modelos/*/outputs/
+
+# Archivos temporales
+*.tmp
+*.temp
+.cache/
+
+# Configuración local (puede contener rutas personales)
+# Descomentar si no quieres subir config.py
+# config.py
+
+# Archivos de sistema
+Thumbs.db
+desktop.ini
+
