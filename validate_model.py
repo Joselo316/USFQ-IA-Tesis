@@ -3,10 +3,16 @@ Script para validar modelos de clasificación supervisada.
 Permite evaluar un modelo entrenado en un dataset de validación y generar métricas.
 """
 
+# Configurar encoding UTF-8 para Windows
+import sys
+import io
+if sys.platform == 'win32':
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
+
 import argparse
 import json
 import os
-import sys
 from pathlib import Path
 from datetime import datetime
 
@@ -340,7 +346,7 @@ def load_model(modelo: int, model_path: str, device: str, **kwargs):
     model.to(device)
     model.eval()
     
-    print(f"✓ Modelo cargado exitosamente")
+    print("OK: Modelo cargado exitosamente")
     return model
 
 
@@ -408,7 +414,7 @@ def plot_confusion_matrix(cm, output_path=None):
     
     if output_path:
         plt.savefig(output_path, dpi=300, bbox_inches='tight')
-        print(f"✓ Matriz de confusión guardada en: {output_path}")
+        print(f"OK: Matriz de confusión guardada en: {output_path}")
     else:
         plt.show()
     plt.close()
@@ -528,7 +534,7 @@ Ejemplos de uso:
         pin_memory=True if device == "cuda" else False
     )
     
-    print(f"✓ Dataset cargado: {len(val_dataset)} imágenes")
+    print(f"OK: Dataset cargado: {len(val_dataset)} imágenes")
     print(f"  - Normal: {sum(1 for l in val_dataset.labels if l == 0)}")
     print(f"  - Fallas: {sum(1 for l in val_dataset.labels if l == 1)}")
     
@@ -594,7 +600,7 @@ Ejemplos de uso:
     
     with open(results_file, 'w') as f:
         json.dump(results_dict, f, indent=2)
-    print(f"\n✓ Resultados guardados en: {results_file}")
+    print(f"\nOK: Resultados guardados en: {results_file}")
     
     # Guardar matriz de confusión
     cm_file = output_dir / f"confusion_matrix_modelo{args.modelo}_{timestamp}.png"
